@@ -5,7 +5,7 @@ import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
-import utils.Actions;
+import utils.Operations;
 import utils.DataFaker;
 
 import java.util.ArrayList;
@@ -53,7 +53,7 @@ public class SignUp extends BasePage {
     private List<WebElement> alertMessageContent;
 
     private void fillInData(boolean valid) {
-        Actions.waitForVisibility(firstNameInput);
+        Operations.waitForVisibility(firstNameInput);
         if (valid) {
             firstNameInput.sendKeys(faker.getFakeFirstname());
         }

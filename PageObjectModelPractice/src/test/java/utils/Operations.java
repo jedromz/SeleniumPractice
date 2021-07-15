@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Instant;
 
-public class Actions {
+public class Operations {
 
     private static final int WAIT_TIMEOUT = 10;
     private static  WebDriverWait wait = new WebDriverWait(WebDriverFactory.getWebDriver(TestConfig.DRIVER_TYPE)
