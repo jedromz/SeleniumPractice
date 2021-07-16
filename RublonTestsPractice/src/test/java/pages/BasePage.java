@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class BasePage {
 
-    private WebDriver driver;
+    protected WebDriver driver;
 
     public BasePage(){
         driver = WebDriverFactory.getWebDriver(WebDriverFactory.CHROME_DRIVER)
